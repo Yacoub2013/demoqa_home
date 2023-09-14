@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 import time
 class BasePage:
-    def __init__(self,driver):
+    def __init__(self, driver):
         self.driver = driver
         self.base_url = "https://www.saucedemo.com/"
 

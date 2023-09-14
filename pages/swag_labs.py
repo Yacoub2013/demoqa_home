@@ -3,14 +3,12 @@ from selenium.common.exceptions import NoSuchElementException
 class SwagLab(BasePage):
 
     def exist_icon(self):
-
         try:
             self.find_element(locator='div.login_logo')
         except NoSuchElementException:
             return False
         return True
-    def click_icon(self):
-        self.find_element(locator='div.login_logo').click()
+
 
 
     def exist_user_name(self):
